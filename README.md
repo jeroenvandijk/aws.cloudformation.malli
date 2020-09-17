@@ -16,6 +16,6 @@ clj -m adgoji.aws.cloudformation.malli.generation/write-malli "dev-resources/clo
 
 ## Licence
 
-Copyright © 2020 Jeroen van Dijk, Adgoji
+Copyright © 2020 Jeroen van Dijk, adgoji
 
-Distributed under the Eclipse Public License 1.0. This project contains code from Clojure and ClojureScript which are also licensed under the EPL 1.0. See LICENSE.
+Distributed under the Eclipse Public License 1.0
