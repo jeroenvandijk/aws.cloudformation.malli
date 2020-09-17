@@ -1,0 +1,17 @@
+{:paths ["resources" "src"]
+ :deps {org.clojure/clojure {:mvn/version "RELEASE"}
+        cheshire {:mvn/version "5.8.0"}
+      
+        malli {:git/url "https://github.com/metosin/malli" :sha "fecd792d02e20a9a22730ea0163b661c539eaa79"}
+      }
+
+ :aliases
+ {:test {:extra-paths ["test"]
+         :extra-deps {org.clojure/test.check {:mvn/version "RELEASE"}}}
+  :runner
+  {:extra-deps {com.cognitect/test-runner
+                {:git/url "https://github.com/cognitect-labs/test-runner"
+                 :sha "76568540e7f40268ad2b646110f237a60295fa3c"}}
+                 
+   :main-opts ["-m" "cognitect.test-runner"
+               "-d" "test"]}}}
