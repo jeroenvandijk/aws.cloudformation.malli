@@ -4,13 +4,13 @@ This library can generate a [Malli](https://github.com/metosin/malli) schema and
 
 ## Validation
 
-````
+```
 clj -m adgoji.aws.cloudformation.malli.validation/validate-dir <template-dir>
 ```
 
 ## Generation
 
-````
+```
 clj -m adgoji.aws.cloudformation.malli.generation/write-malli "dev-resources/cloudformation.malli.edn"
 ```
 
